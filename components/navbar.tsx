@@ -23,6 +23,7 @@ export default function Navbar() {
           {/* Desktop Menu (Hidden on Mobile) */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="#services" className="text-sm font-medium text-muted hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]">Services</Link>
+            <Link href="#investments" className="text-sm font-medium text-muted hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]">Investments</Link>
             <Link href="#success" className="text-sm font-medium text-muted hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]">Success Stories</Link>
             <Link href="#process" className="text-sm font-medium text-muted hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]">How It Works</Link>
             <Link href="#contact" className="text-sm font-medium text-muted hover:text-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]">Contact</Link>
@@ -58,6 +59,13 @@ export default function Navbar() {
               className="block w-full text-lg font-medium text-white hover:text-primary transition-colors py-2"
             >
               Services
+            </Link>
+            <Link 
+              href="#investments" 
+              onClick={() => setIsOpen(false)}
+              className="block w-full text-lg font-medium text-white hover:text-primary transition-colors py-2"
+            >
+              Investments
             </Link>
             <Link 
               href="#success" 
